@@ -5,7 +5,7 @@ import missions from '../data/missions';
 
 export default class Mission extends Component {
   render() {
-    const theMissions = missions.map(({ name, year, country, destination }) => (
+    const missionConteiner = missions.map(({ name, year, country, destination }) => (
       <MissionCard
         key={ name }
         name={ name }
@@ -19,7 +19,7 @@ export default class Mission extends Component {
       <div data-testid="missions">
         <Title headline="Missões" />
         <div>
-          {theMissions}
+          {missionConteiner}
         </div>
       </div>
     );
