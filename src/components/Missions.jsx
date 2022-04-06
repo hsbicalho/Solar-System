@@ -3,7 +3,7 @@ import Title from './Title';
 import MissionCard from './MissionCard';
 import missions from '../data/missions';
 
-class Mission extends Component {
+export default class Mission extends Component {
   render() {
     const theMissions = missions.map(({ name, year, country, destination }) => (
       <MissionCard
@@ -25,5 +25,3 @@ class Mission extends Component {
     );
   }
 }
-
-export default Mission;
