@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function Header() {
-  return (
-    <header><h1>Sistema Solar</h1></header>
-  );
+export default class Header extends Component {
+  render() {
+    return (
+      <header><h1>Sistema Solar</h1></header>
+    );
+  }
 }
