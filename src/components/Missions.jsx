@@ -14,7 +14,6 @@ export default class Mission extends Component {
         destination={ destination }
       />
     ));
-
     return (
       <div data-testid="missions">
         <Title headline="Missões" />
